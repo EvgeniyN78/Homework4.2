@@ -133,56 +133,42 @@ public class Main {
         double calculationPayCriterion5 = wantedSum * (baseRate + 100) / 100 / 12;
         double calculationPayCriterion6 = wantedSum * (baseRate - 0.7 + 100) / 100 / 12;
 
-        if (criterion1){
-            if (calculationPayCriterion1 < maxPay) {
-                System.out.println("Максимальный платеж при ЗП " + salary + " равен " + maxPay + " рублей. " +
+        if (criterion1 && (calculationPayCriterion1 < maxPay)){
+            System.out.println("Максимальный платеж при ЗП " + salary + " равен " + maxPay + " рублей. " +
                         "Платеж по кредиту " + calculationPayCriterion1 + " рублей. Одобрено.");
-            } else if (calculationPayCriterion1 > maxPay) {
-                System.out.println("Максимальный платеж при ЗП " + salary + " равен " + maxPay + " рублей. " +
+        } else if (criterion1 && (calculationPayCriterion1 > maxPay)) {
+            System.out.println("Максимальный платеж при ЗП " + salary + " равен " + maxPay + " рублей. " +
                         "Платеж по кредиту " + calculationPayCriterion1 + " рублей. Отказано.");
-            }
-        } else if (criterion2){
-            if (calculationPayCriterion2 < maxPay) {
-                System.out.println("Максимальный платеж при ЗП " + salary + " равен " + maxPay + " рублей. " +
+        } else if (criterion2 && (calculationPayCriterion2 < maxPay)){
+            System.out.println("Максимальный платеж при ЗП " + salary + " равен " + maxPay + " рублей. " +
                         "Платеж по кредиту " + calculationPayCriterion2 + " рублей. Одобрено.");
-            } else if (calculationPayCriterion2 > maxPay) {
-                System.out.println("Максимальный платеж при ЗП " + salary + " равен " + maxPay + " рублей. " +
+        } else if (criterion2 && (calculationPayCriterion2 > maxPay)) {
+            System.out.println("Максимальный платеж при ЗП " + salary + " равен " + maxPay + " рублей. " +
                         "Платеж по кредиту " + calculationPayCriterion2 + " рублей. Отказано.");
-            }
-        } else if (criterion3){
-            if (calculationPayCriterion3 < maxPay) {
-                System.out.println("Максимальный платеж при ЗП " + salary + " равен " + maxPay + " рублей. " +
+        } else if (criterion3 && (calculationPayCriterion3 < maxPay)) {
+            System.out.println("Максимальный платеж при ЗП " + salary + " равен " + maxPay + " рублей. " +
                         "Платеж по кредиту " + calculationPayCriterion3 + " рублей. Одобрено.");
-            } else if (calculationPayCriterion3 > maxPay) {
-                System.out.println("Максимальный платеж при ЗП " + salary + " равен " + maxPay + " рублей. " +
+        } else if (criterion3 && (calculationPayCriterion3 > maxPay)) {
+            System.out.println("Максимальный платеж при ЗП " + salary + " равен " + maxPay + " рублей. " +
                         "Платеж по кредиту " + calculationPayCriterion3 + " рублей. Отказано.");
-            }
-        } else if (criterion4){
-            if (calculationPayCriterion4 < maxPay) {
-                System.out.println("Максимальный платеж при ЗП " + salary + " равен " + maxPay + " рублей. " +
+        } else if (criterion4 && (calculationPayCriterion4 < maxPay)) {
+            System.out.println("Максимальный платеж при ЗП " + salary + " равен " + maxPay + " рублей. " +
                         "Платеж по кредиту " + calculationPayCriterion4 + " рублей. Одобрено.");
-            } else if (calculationPayCriterion4 > maxPay) {
-                System.out.println("Максимальный платеж при ЗП " + salary + " равен " + maxPay + " рублей. " +
+        } else if ((criterion4 && calculationPayCriterion4 > maxPay)) {
+            System.out.println("Максимальный платеж при ЗП " + salary + " равен " + maxPay + " рублей. " +
                         "Платеж по кредиту " + calculationPayCriterion4 + " рублей. Отказано.");
-            }
-        } else if (criterion5){
-            if (calculationPayCriterion5 < maxPay) {
-                System.out.println("Максимальный платеж при ЗП " + salary + " равен " + maxPay + " рублей. " +
+        } else if (criterion5 && (calculationPayCriterion5 < maxPay)){
+            System.out.println("Максимальный платеж при ЗП " + salary + " равен " + maxPay + " рублей. " +
                         "Платеж по кредиту " + calculationPayCriterion5 + " рублей. Одобрено.");
-            } else if (calculationPayCriterion5 > maxPay) {
-                System.out.println("Максимальный платеж при ЗП " + salary + " равен " + maxPay + " рублей. " +
+        } else if (criterion5 && (calculationPayCriterion5 > maxPay)) {
+            System.out.println("Максимальный платеж при ЗП " + salary + " равен " + maxPay + " рублей. " +
                         "Платеж по кредиту " + calculationPayCriterion5 + " рублей. Отказано.");
-            }
-        } else if (criterion6){
-            if (calculationPayCriterion6 < maxPay) {
-                System.out.println("Максимальный платеж при ЗП " + salary + " равен " + maxPay + " рублей. " +
+        } else if (criterion6 && (calculationPayCriterion6 < maxPay)) {
+            System.out.println("Максимальный платеж при ЗП " + salary + " равен " + maxPay + " рублей. " +
                         "Платеж по кредиту " + calculationPayCriterion6 + " рублей. Одобрено.");
-            } else if (calculationPayCriterion6 > maxPay) {
+        } else if (criterion6 && (calculationPayCriterion6 > maxPay)) {
                 System.out.println("Максимальный платеж при ЗП " + salary + " равен " + maxPay + " рублей. " +
                         "Платеж по кредиту " + calculationPayCriterion6 + " рублей. Отказано.");
-            }
         }
-
-
     }
 }
